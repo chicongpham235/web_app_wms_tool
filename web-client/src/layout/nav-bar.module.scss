@@ -1,0 +1,37 @@
+@use "@/assets/styles/scss/" as *;
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: #fff;
+  height: $header-height;
+}
+.action {
+  display: flex;
+  flex-direction: row-reverse;
+  .nav-bar {
+    display: block;
+  }
+}
+
+@include tablet {
+  .wrapper {
+    align-items: end;
+    padding: 12px 0.75rem;
+    height: $header-height;
+    border-bottom: 1px solid rgb(208, 212, 221);
+    box-shadow: 0px 4px 17px 0px #d1d1d1;
+  }
+  .action {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    .nav-bar {
+      display: block;
+    }
+  }
+}

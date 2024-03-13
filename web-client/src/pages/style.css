@@ -1,0 +1,15 @@
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.link {
+  text-align: right;
+}
+.col {
+  background-color: #ffffff;
+}
+.title {
+  text-align: center;
+}
